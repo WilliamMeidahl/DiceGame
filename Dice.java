@@ -33,19 +33,5 @@ class DiceGame{
             }
             }
     }
-    // private static Result compareActions(Integer computerRoll, Integer diceRoll){
-    //     if(computerRoll == diceRoll{
-    //         return Result.DRAW;
-    //     }
-    //     if( user.equals(rock) && computer.equals(scissors) || user.equals(scissors) && computer.equals(paper) ||  user.equals(paper) && computer.equals(rock)){
-    //         return Result.WIN;
-    //     }
-    //     return Result.LOSE;
-    // }
-    // enum Result {
-    //     WIN,
-    //     LOSE,
-    //     DRAW
-    // }
 }
     
