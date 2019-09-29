@@ -10,17 +10,21 @@ class DiceGame{
             System.out.println("Please type roll when you're ready!");
             String start = scanner.next();
             if(start.equalsIgnoreCase("roll")){  
-                int diceRoll = (int) (Math.random()*11);
-                diceRoll += 2;
-                int computerRoll = (int) (Math.random()*11);
-                computerRoll += 2;
-                System.out.println("You rolled " + diceRoll + "!");
-                System.out.println("The computer rolled " + computerRoll + "!");
-                if(computerRoll > diceRoll){
+                int diceRoll = (int) (Math.random()+5);
+                int diceRoll2 = (int) (Math.random()+5);
+                diceRoll += 1;
+                diceRoll2 += 1;
+                int computerRoll = (int) (Math.random()+5);
+                int computerRoll2 = (int) (Math.random()+5);
+                computerRoll += 1;
+                computerRoll2 += 1;
+                System.out.println("You rolled " + diceRoll + diceRoll2 + "!");
+                System.out.println("The computer rolled " + computerRoll + computerRoll2 + "!");
+                if(computerRoll + computerRoll2 > diceRoll + diceRoll2){
                 computerScore += 1;
                 System.out.println("You've LOST!");
                 System.out.println("Your score " + humanScore + " | Computer score " + computerScore + "!");
-                }else if(diceRoll > computerRoll){
+                }else if(diceRoll + diceRoll2 > computerRoll + computerRoll2){
                     humanScore += 1;
                     System.out.println("You've WON!");
                     System.out.println("Your score " + humanScore + " | Computer score " + computerScore + "!");
